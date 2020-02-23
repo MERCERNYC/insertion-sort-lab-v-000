@@ -1,3 +1,11 @@
+function maxOf(myArray){
+    if (myArray.length < 2) {
+      return myArray[0];
+    } else {
+      return Math.max(myArray.pop(), maxOf(myArray))
+    }
+  }
+
 function findMinAndRemove(array){
     // Math.min(...array) 
     if (array.length < 2) {
