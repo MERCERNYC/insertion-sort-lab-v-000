@@ -6,15 +6,15 @@
 //     }
 //   }
 
-function includesNumber(myArray, num){
-    if (!myArray.length) {
-      return false;
-    } else if (myArray[0] === num){
-      return true;
-    } else {
-      return includesNumber(myArray.slice(1), num);
-    }
-   }
+// function includesNumber(myArray, num){
+//     if (!myArray.length) {
+//       return false;
+//     } else if (myArray[0] === num){
+//       return true;
+//     } else {
+//       return includesNumber(myArray.slice(1), num);
+//     }
+//    }
 
 function findMinAndRemove(array){
     // Math.min(...array) 
@@ -34,3 +34,18 @@ function insertionSort(array){
     }
     return sorted;
 }
+//example
+
+function addUpTo(myArray, index) {
+    return index ? myArray[index] + addUpTo(myArray, --index) : myArray[index];
+  }
+
+// findTheMin given our original array, and remove that element
+ 
+  // now with the new array, findTheMin again, 
+  // and remove that element
+ 
+  // keep doing this until our unsortedArray is empty
+ 
+  // Push these removed elements into an empty array one by one
+  // and that empty array will be our sorted array.
